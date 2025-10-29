@@ -28,3 +28,18 @@ h1, h2, h3 {
     color: #fff;
     text-decoration: none;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+table tr {
+    background-color: #f2f2f2;
+}
