@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Rounded rectangle background -->
+  <rect x="0" y="0" width="100" height="100" rx="12" ry="12" fill="#042a2b"/>
+  
+  <!-- Outer circle -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#62929e" stroke-width="5"/>
+  
+  <!-- Inner circle -->
+  <circle cx="50" cy="50" r="35" fill="none" stroke="#62929e" stroke-width="4"/>
+  
+  <!-- Compass needle pointing North (tilted) -->
+  <g transform="rotate(30 50 50)">
+    <line x1="50" y1="50" x2="50" y2="20" stroke="#62929e" stroke-width="6" stroke-linecap="round"/>
+    <line x1="50" y1="50" x2="50" y2="80" stroke="#62929e" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Center dot -->
+  <circle cx="50" cy="50" r="5" fill="#62929e"/>
+  
+  <!-- Cardinal direction arrows -->
+  <!-- North arrow -->
+  <polygon points="50,15 42,23 58,23" fill="#62929e"/>
+  <!-- South arrow -->
+  <polygon points="50,85 42,77 58,77" fill="#62929e"/>
+  <!-- West arrow -->
+  <polygon points="15,50 23,42 23,58" fill="#62929e"/>
+  <!-- East arrow -->
+  <polygon points="85,50 77,42 77,58" fill="#62929e"/>
+</svg>
