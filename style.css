@@ -1,31 +1,62 @@
+:root {
+    --bg: #f4f4f4;
+    --surface: #fff;
+    --text: #000;
+    --heading: #333;
+    --header-bg: #333;
+    --header-text: #fff;
+    --border: #ddd;
+    --row-bg: #f2f2f2;
+    --muted: #666;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #042a2b;
+        --surface: #0a3435;
+        --text: #f1f7ed;
+        --heading: #f1f7ed;
+        --header-bg: #021a1b;
+        --header-text: #f1f7ed;
+        --border: #2f5f63;
+        --row-bg: #0e3d3f;
+        --muted: #9db9bb;
+    }
+
+    a {
+        color: #76aebc;
+    }
+}
+
 body {
     font-family: sans-serif;
     line-height: 1.6;
     margin: 0;
-    background-color: #f4f4f4;
+    color: var(--text);
+    background-color: var(--bg);
 }
 
 .container {
     max-width: 800px;
     margin: auto;
-    background: #fff;
+    background: var(--surface);
     padding: 20px;
     border-radius: 5px;
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: var(--heading);
 }
 
 .page-header {
-    background: #333;
-    color: #fff;
+    background: var(--header-bg);
+    color: var(--header-text);
     padding: 1rem;
     text-align: center;
 }
 
 .page-header a {
-    color: #fff;
+    color: var(--header-text);
     text-decoration: none;
 }
 
@@ -37,11 +68,11 @@ table {
 
 table td {
     padding: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
 }
 
 table tr {
-    background-color: #f2f2f2;
+    background-color: var(--row-bg);
 }
 
 footer {
@@ -49,5 +80,5 @@ footer {
     margin-top: 2rem;
     padding: 1rem;
     font-size: 0.9rem;
-    color: #666;
+    color: var(--muted);
 }
