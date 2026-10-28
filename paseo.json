@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "preview": {
+      "type": "service",
+      "command": "node scripts/serve.js"
+    }
+  }
+}
